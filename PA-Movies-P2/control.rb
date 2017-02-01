@@ -4,6 +4,12 @@ print "Base File: "
 base = gets.chomp
 print "Test File: "
 test = gets.chomp
-v = Validator.new(base,test)
+print "Output File: "
+name = gets.chomp
+puts Time.now
+v = Validator.new(base,test,name)
 v.validate()
+puts Time.now
+
+
 
